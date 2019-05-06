@@ -1,0 +1,6 @@
+[submodule "src/lib/uECC"]
+	path = src/lib/uECC
+	url = https://github.com/kmackay/micro-ecc
+[submodule "test/lib/googletest"]
+	path = test/lib/googletest
+	url = https://github.com/google/googletest.git
