@@ -10,4 +10,20 @@
 #ifndef PSP_NET_H
 #define PSP_NET_H
 
+#include <string>
+
+namespace Ark {
+namespace Platform {
+namespace Network {
+
+namespace HTTP {
+
+  std::string Get(const char* request);
+  std::string Post(const char* request, const char* body);
+};
+
+};
+};
+};
+
 #endif

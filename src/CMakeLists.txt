@@ -22,6 +22,7 @@ set(uECC_SRC
 
 set(COMMON_SRC
     psp_crypto.cpp
+    psp_net.cpp
     psp_rng.cpp
     psp_time.cpp
 )
@@ -45,6 +46,8 @@ include_directories(${PROJECT_SOURCE_DIR}/lib/uECC)
 target_include_directories( ${PROJECT_NAME} PUBLIC
 	${ark_cpp_psp_os_build_include_dirs}
 )
+
+target_link_libraries(${PROJECT_NAME} PUBLIC curl)
 
 if (MSVC)
 	target_link_libraries(${PROJECT_NAME} PUBLIC crypt32)

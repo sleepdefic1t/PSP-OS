@@ -21,6 +21,7 @@ include_directories(${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
 
 set (TEST_SRC
 	${PROJECT_SOURCE_DIR}/crypto_test.cpp
+	${PROJECT_SOURCE_DIR}/net_test.cpp
 	${PROJECT_SOURCE_DIR}/rng_test.cpp
 	${PROJECT_SOURCE_DIR}/time_test.cpp
 )
